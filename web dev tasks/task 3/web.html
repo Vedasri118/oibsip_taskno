@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="mb-4">Temperature Converter</h2>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <h4 class="mb-3 mt-3">Degrees</h4>
+        <input type="number" class="form-control" id="temperatureInput" placeholder="Enter temperature">
+      </div>
+      <div class="col-md-6 mb-3">
+        <h4 class="mb-3 mt-3">Type</h4>
+        <select class="form-control" id="unitSelect">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn btn-primary mt-1" onclick="convertTemperature()">Convert</button>
+    <h4 class="mt-3">Result</h4>
+    <div id="resultArea" class="resultText"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
